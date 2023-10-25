@@ -10,12 +10,10 @@ void main() {
     vec4 total_color = vec4(0);
     
     for (float i = -blur_radius; i <= blur_radius; i += 1.0) {
-        for (float j = -blur_radius; j <= blur_radius; j += 1.0) {
-            total_color += texture2D(gm_BaseTexture, v_vTexcoord + vec2(i, j) * texel);
-        }
+        total_color += texture2D(gm_BaseTexture, v_vTexcoord + vec2(0, i) * texel);
     }
     
-    total_color /= pow(2.0 * blur_radius + 1.0, 2.0);
+    total_color /= 2.0 * blur_radius + 1.0;
     
     gl_FragColor = v_vColour * total_color;
 }

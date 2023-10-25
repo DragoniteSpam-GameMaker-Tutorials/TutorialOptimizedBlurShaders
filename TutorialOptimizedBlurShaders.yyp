@@ -18,7 +18,8 @@
     "IDEVersion": "2023.8.2.108",
   },
   "resources": [
-    {"id":{"name":"shd_blur","path":"shaders/shd_blur/shd_blur.yy",},},
+    {"id":{"name":"shd_blur_v","path":"shaders/shd_blur_v/shd_blur_v.yy",},},
+    {"id":{"name":"shd_blur_h","path":"shaders/shd_blur_h/shd_blur_h.yy",},},
     {"id":{"name":"Object1","path":"objects/Object1/Object1.yy",},},
     {"id":{"name":"spr_bunny","path":"sprites/spr_bunny/spr_bunny.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
